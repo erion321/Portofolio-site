@@ -48,9 +48,21 @@ body {
   font-family: cursive;
 }
 
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media only screen and (min-width: 900px) {
+  .navbar-links {
+    
+    gap: 2rem;
+  }
+}
+
 .navbar-links a {
-  font-size: 18px;
-  margin-right: 1rem;
+  font-size: 16px;
   text-decoration: none;
   color: white;
   background-color: transparent;
@@ -64,7 +76,6 @@ body {
 
 @media only screen and (min-width: 900px) {
   .navbar-links a {
-    margin-right: 2rem;
     padding: 0.4rem 1rem;
   }
 }

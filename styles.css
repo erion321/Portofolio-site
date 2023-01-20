@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -25,40 +29,49 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(29, 104, 104, 0.371);
+  background-color: rgba(94, 151, 67, 0.2);
   height: 12vh;
 }
 
+@media only screen and (min-width: 600px) {
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+}
+
 .nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
   text-decoration: none;
   color: black;
 }
 
-.nav-logo img {
-  object-fit: cover;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.nav-logo h3 {
+  font-family: cursive;
 }
 
 .navbar-links a {
-  font-size: 14px;
-  margin-right: 0.3rem;
+  font-size: 18px;
+  margin-right: 1rem;
   text-decoration: none;
   color: white;
-  background-color: var(--primary);
+  background-color: transparent;
+  color: var(--primary);
+  font-weight: bold;
   padding: 0.3rem;
   transition: 0.5s ease;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   border-radius: 4px;
 }
 
+@media only screen and (min-width: 900px) {
+  .navbar-links a {
+    margin-right: 2rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
 .navbar-links a:hover {
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: rgb(4, 65, 65);
+  color: rgb(4, 65, 65);
   background-color: white;
   transition: 0.5s ease;
 }
@@ -72,14 +85,28 @@ body {
   gap: 2rem;
 }
 
-.main-section .header {
+@media only screen and (min-width: 600px) {
+  .main-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.header {
   display: grid;
   gap: 1rem;
 }
 
-.main-section .header > h3 {
+.header main h1 {
+  font-family: cursive;
+  margin-bottom: 1rem;
+}
+
+.header main h3 {
   color: rgb(104, 150, 133);
 }
+
 .main-section .section-links {
   display: flex;
   flex-direction: column;
@@ -88,19 +115,33 @@ body {
 }
 .main-section .section-links a {
   margin: 0 1rem;
+  color: black;
 }
 
 .main-section img {
   object-fit: cover;
-  height: 200px;
-  width: 400px;
-  border-radius: 4rem;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
 }
 
 .about-section {
   padding: 15vh 1rem 1rem 1rem;
   display: grid;
   gap: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .about-section {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .about-section {
+    width: 55%;
+  }
 }
 
 .about-section h2 {
@@ -110,16 +151,28 @@ body {
 .about-section p {
   border: 2px solid var(--primary);
   border-radius: 4px;
-  padding: 0.4rem;
+  padding: 1rem;
   background-color: rgba(29, 104, 104, 0.171);
-  font-size: 16px;
-  font-family: cursive;
+  font-size: 18px;
 }
 .skills-section {
   padding: 15vh 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .skills-section {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .skills-section {
+    width: 55%;
+  }
 }
 
 .skills-section h2 {
@@ -139,7 +192,7 @@ body {
   text-align: center;
   border: 1px solid var(--primary);
   color: var(--primary);
-  padding: 0.4rem;
+  padding: 0.4rem 1rem;
   border-radius: 4px;
   font-weight: bold;
   transition: 0.5s ease;
@@ -156,13 +209,27 @@ body {
   gap: 1rem;
 }
 
+@media only screen and (min-width: 600px) {
+  .projects-section {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .projects-section {
+    margin: 0 auto;
+    width: 55%;
+  }
+}
+
 .projects-section h2 {
   text-align: center;
 }
 
 .project {
-  background-color: white;
-  padding: 0.5rem;
+  background-color: rgba(94, 151, 67, 0.2);
+  padding: 1rem;
   border-radius: 8px;
   border: 2px solid var(--primary);
   display: grid;
@@ -217,6 +284,22 @@ body {
   color: black;
   text-decoration: none;
   border-bottom: 2px solid var(--primary);
+}
+
+@media only screen and (min-width: 600px) {
+  .contact-section .contact-links a svg {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 0.3rem;
+  }
+
+  .contact-section .contact-links a {
+    font-size: 20px;
+  }
+
+  .contact-section .contact-links {
+    gap: 4rem;
+  }
 }
 
 svg {

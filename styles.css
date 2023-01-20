@@ -130,10 +130,10 @@ body {
 }
 
 .main-section img {
-  object-fit: cover;
+  object-fit: contain;
   height: 300px;
-  width: 300px;
-  border-radius: 2rem;
+  width: 213px;
+  border-radius: 1rem;
 }
 
 .about-section {

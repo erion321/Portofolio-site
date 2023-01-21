@@ -113,8 +113,9 @@ body {
 }
 
 .header main h1 {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-bottom: 1rem;
+  font-size: 32px;
 }
 
 .header main h3 {

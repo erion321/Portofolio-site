@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 :root {
   --primary: rgb(29, 104, 104);
@@ -17,7 +18,7 @@ html {
 }
 
 body {
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   background-color: rgba(43, 122, 133, 0.11);
   display: flex;
   flex-direction: column;
@@ -113,9 +114,9 @@ body {
 }
 
 .header main h1 {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   margin-bottom: 1rem;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .header main h3 {

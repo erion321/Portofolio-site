@@ -99,7 +99,7 @@ body {
   justify-content: center;
   height: 100vh;
   gap: 5rem;
-  background-image: url(./photos/jr-korpa-9XngoIpxcEo-unsplash.jpg);
+  background-image: url(./images/jr-korpa-9XngoIpxcEo-unsplash.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -149,16 +149,9 @@ body {
 }
 
 .main-section .section-links a svg {
+  height: 30px;
+  width: 30px;
   fill: white;
-}
-
-.main-section img {
-  object-fit: contain;
-  height: 300px;
-  width: 213px;
-  border-radius: 1rem;
-  border: 2px solid var(--primary);
-  padding: 0.5rem;
 }
 
 .about-section {

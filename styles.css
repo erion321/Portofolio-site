@@ -97,7 +97,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  height: 100vh;
+  gap: 5rem;
+  background-image: url(./photos/jr-korpa-9XngoIpxcEo-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (min-width: 600px) {
@@ -110,6 +115,7 @@ body {
 
 .header {
   display: grid;
+  height: 60vh;
   gap: 1rem;
 }
 
@@ -117,10 +123,13 @@ body {
   font-family: "Josefin Sans", sans-serif;
   margin-bottom: 1rem;
   font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 .header main h3 {
-  color: rgb(104, 150, 133);
+  color: black;
+  text-align: center;
 }
 
 .main-section .section-links {
@@ -129,9 +138,18 @@ body {
   align-items: center;
   gap: 1rem;
 }
+
+.main-section .section-links h3 {
+  font-size: 22px;
+}
+
 .main-section .section-links a {
   margin: 0 1rem;
   color: black;
+}
+
+.main-section .section-links a svg {
+  fill: white;
 }
 
 .main-section img {
